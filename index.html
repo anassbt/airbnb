@@ -53,3 +53,44 @@
     <!-- container start -->
 
     <div class="container">
+
+      <!-- first section in container -->
+
+      <section class="top">
+
+        <h1><span>Où souhaitez-vous aller ?</span> Votre prochain voyage commence sur Airbnb.</h1>
+
+        <form id="other" action="index.html" method="post">
+
+          <div id="ou">
+            <label for="ou">Où</label>
+            <input type="text" name="ou" id="ou" placeholder="Destination, ville ou adresse">
+          </div>
+
+          <div id="quand">
+            <label for="quand">Quand</label>
+              <div id="quandin">
+                <input type="text" name="quand" placeholder="Arrivée">
+                <input type="text" name="quand" placeholder="Départ">
+              </div>
+          </div>
+
+          <div id="voyageurs">
+            <label for="voyageurs">Voyageurs</label>
+              <select name="voyageurs" id="voyageurs">
+                <option value="adulte">Adulte</option>
+                <option value="enfant">Enfant</option>
+                <option value="bebe">Bébé</option>
+              </select>
+          </div>
+
+          <input type="submit" name="submit" value="R">
+          <input type="submit" name="submitpc" value="Recherche">
+
+        </form>
+
+        <form id="phone" action="index.html" method="post">
+          <input type="search" name="search" placeholder="Rechercher">
+        </form>
+
+      </section>
