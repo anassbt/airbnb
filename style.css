@@ -1,0 +1,456 @@
+body{
+  margin: 0;
+  font-family: arial;
+  color: #575757;
+}
+
+h1 span{
+  color: #FB5C5C;
+}
+
+h1{
+  font-weight: normal;
+  font-size: 25px;
+}
+
+.navtpc, #other{
+  display: none;
+}
+
+header figure{
+  width: 30px;
+  cursor: pointer;
+}
+
+.dropdown {
+   position: relative;
+   display: inline-block;
+   width: 100%;
+}
+
+.dropdown-content {
+   display: none;
+   position: absolute;
+   background-color: white;
+   min-width: 100%;
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   z-index: 1;
+}
+
+.dropdown-content a {
+   color: #575757;
+   padding: 20px;
+   text-decoration: none;
+   display: block;
+}
+
+.dropdown:hover .dropdown-content {
+   display: block;
+}
+
+#d{
+  border-bottom: 1px lightgrey solid;
+}
+
+#t{
+  border-top: 1px lightgrey solid;
+}
+
+header img{
+  width: 30px;
+}
+
+input[name="search"]{
+  height: 50px;
+  padding: 15px;
+  width: 100%;
+}
+
+.container{
+  width: 90%;
+  margin: auto;
+}
+
+h2{
+  font-size: 18px;
+  margin-top: 10%;
+}
+
+.bot, .bot3, .bot2{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /*flex-wrap: wrap;*/
+}
+
+/*.bot2{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}*/
+
+.dont, .bot article:nth-child(3), .bot article:nth-child(4),
+.bot2 article:nth-child(2), .bot2 article:nth-child(3),
+.bot3 article:nth-child(4),
+.bot3 article:nth-child(5),
+.bot3 article:nth-child(6){
+  display: none;
+}
+
+.bot figure, .bot2 figure, .bot3 figure, .last figure{
+  width: 100%;
+  margin: 0;
+}
+
+.bot img, .last img, .bot2 img, .bot3 img {
+  width: 100%;
+}
+
+.last img{
+  height: 100%;
+}
+
+.bot p, .bot2 p, .bot3 p{
+  font-size: 12px;
+}
+
+.bot3 p{
+  font-weight: bold;
+}
+
+.offerts{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1%;
+  width: 45%;
+  /*justify-content: center;
+  align-items: center;*/
+}
+
+.offerts3{
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 25%;
+  margin: 1%;
+  /*justify-content: center;
+  align-items: center;*/
+}
+
+.logements{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1%;
+  /*background: yellow;*/
+}
+
+.bot p span, .logements p span{
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.last{
+  width: 100%;
+  margin: 30px auto;
+}
+
+.last button{
+  background: #00847E;
+  padding: 10px;
+  border: none;
+  color: white;
+  border-radius: 4%;
+}
+
+a{
+  color: #575757;
+  text-decoration: none;
+}
+
+footer{
+  width: 100%;
+  margin: 10px auto;
+}
+
+.foot, .foot2{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.foot2 select{
+  width: 45%;
+  margin: 5px;
+}
+
+.end2{
+  width: 90%;
+  margin: 2% auto;
+  border-top: 1px lightgrey solid;
+}
+
+.end{
+  width: 100%;
+  border-top: 1px lightgrey solid;
+}
+
+.dontt{
+  display: none;
+}
+
+.footlg figure{
+  width: 20px;
+  margin: 0;
+}
+
+.footlg img{
+  width: 20px;
+}
+
+.footlg p {
+  margin-left: 10px;
+}
+
+.foot2 select{
+  border: 1px lightgrey solid;
+  border-radius: 0;
+  background: white;
+  padding: 12px;
+  margin-top: 10px;
+}
+
+.footlk figure{
+  width: 18px;
+  margin: 0 1%;
+}
+
+.footlk img{
+  width: 18px;
+}
+
+.footlk, .footlg{
+  display: flex;
+  width: 100%;
+  margin: 0;
+  /*justify-content: space-between;*/
+  align-items: baseline;
+  /*justify-content: space-around;*/
+}
+
+.footlk p{
+  font-size: 14px;
+  padding: 1%;
+}
+
+.footlk a:hover{
+  text-decoration: underline;
+}
+
+.footlk p, .footlk figure{
+  align-content: space-between;
+}
+
+/*TABLET*/
+
+@media (min-width: 768px) {
+
+  .dropdown, #phone, input[name="submitpc"]{
+    display: none;
+  }
+
+  .bot article:nth-child(3), .bot2 article:nth-child(2),
+  .bot3 article:nth-child(4){
+    display: block;
+  }
+
+  #other, .navtpc, .dontt, .end{
+    display: flex;
+  }
+
+  .navtpc{
+    /*display: block;*/
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+
+  }
+
+  .end{
+    justify-content: center;
+  }
+
+  .navtpc ul{
+    list-style: none;
+    display: inline-flex;
+  }
+
+  .navtpc li{
+    margin-right: 30px;
+  }
+
+  h1{
+    font-size: 45px;
+    line-height: 50px;
+  }
+
+  h1 span{
+    font-weight: bold;
+  }
+
+  .bot p, .bot2 p, .bot3 p{
+    font-size: 14px;
+  }
+
+  #other{
+    width: 100%;
+    border: 1px lightgrey solid;
+    padding: 10px;
+    border-radius: 1%;
+    justify-content: space-between;
+  }
+
+  #quandin{
+    display: flex;
+    flex-direction: row;
+  }
+
+  #quand{
+    width: 40%;
+  }
+
+  input[name="quand"], input[name="ou"], select[name="voyageurs"]{
+    padding: 5px 0;
+    border: none;
+    background: white;
+    color: #575757;
+  }
+
+  input[name="quand"]{
+    width: 30%;
+    display: flex;
+  }
+
+  input[name="ou"]{
+    width: 100%;
+  }
+
+  input[name="ou"]:focus, input[name="quand"]:focus{
+    border-bottom: 1px #575757 solid;
+  }
+
+  select[name="voyageurs"]{
+    width: 70%;
+  }
+
+  input[name="submit"]{
+    background: #FB5C5C;
+    color: white;
+    padding: 2%;
+    border: none;
+    border-radius: 5%;
+    cursor: pointer;
+  }
+
+  input[name="submit"]:hover{
+    opacity: .9;
+  }
+
+  .last{
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .lastp{
+    width: 40%;
+  }
+
+  .lastp h3{
+    font-size: 25px;
+  }
+
+  .last figure{
+    width: 50%;
+  }
+
+  .foot2{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    margin-left: 30px;
+  }
+
+  select[name="lang"], select[name="money"]{
+    height: 30%;
+    width: 80%;
+  }
+
+  .dontt li{
+    list-style: none;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .dontt span{
+    font-weight: bold;
+  }
+
+  .end2{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .end{
+    justify-content: center;
+  }
+
+  .footlk{
+    justify-content: flex-end;
+  }
+
+}
+
+/*desktop*/
+
+@media (min-width: 1024px){
+
+  .container{
+    width: 85%;
+  }
+
+  .bot article:nth-child(4),
+  .bot2 article:nth-child(3),
+  .bot3 article:nth-child(5),
+  .bot3 article:nth-child(6){
+    display: block;
+  }
+
+  input[name="submitpc"]{
+    display: flex;
+  }
+
+  input[name="submit"]{
+    display: none;
+  }
+
+  .top h1{
+    width: 50%;
+  }
+
+  input[name="submitpc"]{
+    background: #FB5C5C;
+    color: white;
+    padding: 2%;
+    border: none;
+    border-radius: 5%;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+
+  .end2{
+    justify-content: space-between;
+  }
+}
