@@ -81,14 +81,8 @@ h2{
   display: flex;
   align-items: center;
   justify-content: space-around;
-  /*flex-wrap: wrap;*/
 }
 
-/*.bot2{
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-}*/
 
 .dont, .bot article:nth-child(3), .bot article:nth-child(4),
 .bot2 article:nth-child(2), .bot2 article:nth-child(3),
@@ -124,8 +118,7 @@ h2{
   flex-wrap: wrap;
   margin: 1%;
   width: 45%;
-  /*justify-content: center;
-  align-items: center;*/
+
 }
 
 .offerts3{
@@ -134,8 +127,7 @@ h2{
   margin: auto;
   width: 25%;
   margin: 1%;
-  /*justify-content: center;
-  align-items: center;*/
+
 }
 
 .logements{
@@ -143,7 +135,6 @@ h2{
   display: flex;
   flex-wrap: wrap;
   margin: 1%;
-  /*background: yellow;*/
 }
 
 .bot p span, .logements p span{
@@ -234,9 +225,7 @@ footer{
   display: flex;
   width: 100%;
   margin: 0;
-  /*justify-content: space-between;*/
   align-items: baseline;
-  /*justify-content: space-around;*/
 }
 
 .footlk p{
@@ -252,7 +241,7 @@ footer{
   align-content: space-between;
 }
 
-/*TABLET*/
+
 
 @media (min-width: 768px) {
 
@@ -270,7 +259,6 @@ footer{
   }
 
   .navtpc{
-    /*display: block;*/
     width: 100%;
     align-items: center;
     justify-content: space-between;
@@ -413,7 +401,6 @@ footer{
 
 }
 
-/*desktop*/
 
 @media (min-width: 1024px){
 
